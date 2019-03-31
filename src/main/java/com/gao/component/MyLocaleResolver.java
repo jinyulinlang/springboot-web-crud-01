@@ -1,15 +1,11 @@
 package com.gao.component;
 
-import com.sun.corba.se.spi.orbutil.closure.Closure;
-import com.sun.corba.se.spi.resolver.LocalResolver;
-import org.omg.CORBA.Object;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.LocaleResolver;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Locale;
-import java.util.Set;
 
 /**
  * 可以在連接上携帶區域信息
