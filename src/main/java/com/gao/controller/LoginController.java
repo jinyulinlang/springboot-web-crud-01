@@ -1,14 +1,11 @@
 package com.gao.controller;
 
-import com.gao.form.LoginForm;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
-import java.util.HashMap;
 import java.util.Map;
 
 @Controller
@@ -32,4 +29,5 @@ public class LoginController {
             return "redirect:/";
         }
     }
+
 }
