@@ -19,9 +19,17 @@ public class LoginController {
         if (!StringUtils.isEmpty (name) && "123456".equals (password)) {
             return "redirect:/main.html";
         } else {
+            session.setAttribute ("msg", "用户名或者密码错误!ywtwrt");
+            return "redirect:/";
+        }
+    }
+    @RequestMapping("/user/update")
+    public String update(@RequestParam("name") String name, @RequestParam("password") String password, Map<String, Object> bean, HttpSession session) {
+        if (!StringUtils.isEmpty (name) && "123456".equals (password)) {
+            return "redirect:/main.html";
+        } else {
             session.setAttribute ("msg", "用户名或者密码错误!");
             return "redirect:/";
         }
     }
-
 }
